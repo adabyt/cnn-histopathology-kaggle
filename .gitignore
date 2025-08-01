@@ -1,0 +1,36 @@
+# 🗂 Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# 🐍 Python cache & temp files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🌱 Virtual environments
+.venv_tme/
+.venv/
+venv/
+
+# 🍏 MacOS system files
+.DS_Store
+
+# 🔐 Environment files
+.env
+kaggle.json
+
+# 💻 VSCode settings
+.vscode/
+
+# 📦 Dataset (keep folder, ignore contents)
+tme_data/*
+!tme_data/.gitkeep
+
+# 🏗️ Model outputs (keep folder, ignore contents)
+tme_models/*
+!tme_models/.gitkeep
+
+# 📊 TensorBoard logs (keep folder, ignore contents)
+logs/*
+!logs/.gitkeep
+
