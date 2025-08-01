@@ -68,6 +68,7 @@ cnn-histopathology-kaggle/
 ├── .gitignore            # gitignore file
 ├── requirements.txt      # Specifies files & folders for Git to ignore
 ├── tme.py                # Main training script
+├── tme.ipynb             # Jupyter notebook   
 └── README.md             # This file
 ```
 
