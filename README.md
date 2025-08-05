@@ -1,4 +1,4 @@
-# 🩺 CNN for Histopathologic Cancer Detection (Kaggle Practice)
+# CNN for Histopathologic Cancer Detection (Kaggle Practice)
 
 This project uses a **Convolutional Neural Network (CNN)** with **MobileNetV2** as the base model and hyperparameter tuning via **KerasTuner** to classify histopathologic images as **benign** or **metastatic cancer**.
 
@@ -6,7 +6,7 @@ Although this dataset was part of the [Histopathologic Cancer Detection Kaggle C
 
 ---
 
-## 📂 Dataset
+## Dataset
 - **Source:** [Kaggle - Histopathologic Cancer Detection](https://www.kaggle.com/competitions/histopathologic-cancer-detection/data)  
 - **Images:** 96x96-pixel patches from lymph node sections.
 - **Labels:**  
@@ -17,7 +17,7 @@ The dataset was downloaded using the Kaggle API, preprocessed, and split into **
 
 ---
 
-## 🏗 Model Architecture
+## Model Architecture
 - **Base Model:** MobileNetV2 (ImageNet pretrained, frozen during training)
 - **Custom Layers:**
   - GlobalAveragePooling2D
@@ -28,7 +28,7 @@ The dataset was downloaded using the Kaggle API, preprocessed, and split into **
 
 ---
 
-## 🔍 Hyperparameter Tuning
+## Hyperparameter Tuning
 Used **KerasTuner Random Search** to find optimal values for:
 - Units in Dense layer
 - Dropout rate
@@ -37,7 +37,7 @@ Used **KerasTuner Random Search** to find optimal values for:
 
 ---
 
-## 📊 Results (Best Model)
+## Results (Best Model)
 
 **Best Hyperparameters:**
 - Units in Dense layer: **416**
@@ -46,16 +46,16 @@ Used **KerasTuner Random Search** to find optimal values for:
 - Optimiser: **adam**
 
 **Best Model Performance (Validation Set):**
-- ✅ **Loss:** 0.2956  
-- ✅ **Accuracy:** 87.57%  
-- ✅ **Precision:** 87.08%  
-- ✅ **Recall:** 81.40%  
-- ✅ **AUC:** 0.9441  
-- ✅ **F1 Score:** 0.8414  
+- **Loss:** 0.2956  
+- **Accuracy:** 87.57%  
+- **Precision:** 87.08%  
+- **Recall:** 81.40%  
+- **AUC:** 0.9441  
+- **F1 Score:** 0.8414  
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cnn-histopathology-kaggle/
@@ -74,30 +74,30 @@ cnn-histopathology-kaggle/
 
 ---
 
-## 🚀 How to Run
-1️⃣ **Clone the repo**  
+## How to Run
+1. **Clone the repo**  
 ```bash
 git clone https://github.com/adabyt/cnn-histopathology-kaggle.git
 cd cnn-histopathology-kaggle
 ```
 
-2️⃣ Install dependencies
+2. Install dependencies
 ```
 pip install -r requirements.txt
 ```
 
-3️⃣ Ensure Kaggle API setup
+3. Ensure Kaggle API setup
 - Place your kaggle.json in ~/.kaggle/
 - Accept competition rules on Kaggle
 
-4️⃣ Run training script
+4. Run training script
 ```
 python tme.py
 ```
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 - Fine-tune MobileNetV2 layers (unfreeze top layers for additional training)
 - Experiment with other base models (e.g., EfficientNet, ResNet50)
 - Try different augmentation strategies for better generalisation
@@ -105,12 +105,12 @@ python tme.py
 
 ---
 
-## 📜 Acknowledgements
+## Acknowledgements
 - Dataset: [Kaggle Histopathologic Cancer Detection](https://www.kaggle.com/competitions/histopathologic-cancer-detection/data)
 - Pretrained Model: [MobileNetV2](https://arxiv.org/abs/1801.04381)
 
 ---
 
-## 📌 Note
+## Note
 
 This project is for educational purposes and deep learning practice — NOT for clinical use.
